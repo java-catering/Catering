@@ -1,0 +1,27 @@
+.Container {
+    background: #2D3343;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .Container__Inner {
+        background: #49526A;
+        height: 30rem;
+        width: 80%;
+        max-width: 60rem;
+        border-radius: 8px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 20rem;
+            color: #2D3343;
+            font-weight: bold;
+            font-family: 'Coiny', cursive;
+        }
+    }
+}

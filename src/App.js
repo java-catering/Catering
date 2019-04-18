@@ -1,23 +1,30 @@
 import React, { Component } from 'react';
+import { Router } from 'buttermilk';
 import './App.css';
+import Home from './Components/Home/';
+import Menu from './Components/Menu';
+import Missing from './Components/Missing';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <Router
+            routes={[
+              {
+                path: '/',
+                render: () => Home,
+              },
+              {
+                path: '/menu',
+                render: () => Menu,
+              },
+              {
+                path: '*',
+                render: () => Missing,
+              }
+            ]}
+          />
       </div>
     );
   }
