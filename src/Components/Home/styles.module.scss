@@ -1,0 +1,183 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    min-width: 40rem;
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 30rem;
+        padding: 1rem;
+    }
+    .splash {
+        background: url("../../static/images/bread-color-cooking-1024.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        height: 60rem;
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 4rem;
+        }
+        p {
+            font-size: 2rem;
+            letter-spacing: 1px;
+            line-height: 1.25;
+            max-width: 60rem;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        button {
+            background: #25A55B;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border-radius: 3px;
+            opacity: 1;
+            border: 0;
+            cursor: pointer;
+        }
+        button:first-child{
+            margin-right: 4rem;
+        }
+
+    }
+    .description {
+        width: 100%;
+        background: #F0F0F0;
+        padding: 0;
+        padding-left: 1rem;
+        height: 60rem;
+        .descriptionInner {
+            width: 100%;
+            height: 100%;
+            padding: 3rem 0;
+            max-width: 120rem;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            &__Background {
+                width: 80rem;
+                height: 80rem;
+                position: absolute;
+                top: -20%;
+                right: -25%;
+                z-index: 0;
+                background-image: url("../../static/images/asparagus-avocado-white-background.jpg");
+                background-size: cover;
+                background-position: center;
+                border-radius: 50%;
+            }
+            h1 {
+                margin-bottom: 4rem;
+                font-weight: 900;
+            }
+            p {
+                max-width: 40rem;
+            }
+            .cardContainer {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                position: relative;
+                z-index: 1;
+                .card {
+                    width: 28%;
+                    height: 70%;
+                    background: white;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2rem;
+                    border-radius: 5px;
+                    h2 {
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    .menuContainer {
+        background-image: url("../../static/images/cuttingboard.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 80rem;
+        .menuInner {
+            width: 100%;
+            height: 100%;
+            max-width: 120rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .menu {
+                width: 90%;
+                height: 60%;
+                display: flex;
+                flex-wrap: wrap;
+                background: white;
+                .menuItem {
+                    width: 50%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    .menuContent {
+                        width: 50%;
+                        padding: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        h2 {
+                            margin-bottom: 2rem;
+                        }
+                        p {
+                            line-height: 1.25;
+                        }
+                        .price {
+                            margin-top: auto;
+                            color: #278F62;
+                            font-size: 2rem;
+                            font-weight: bold;
+                        }
+                    }
+                    .image {
+                        background-image: url("../../static/images/hamburger-494706_640.jpg");
+                        background-size: cover;
+                        background-position: center;
+                        width: 50%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .ctaContainer {
+        .ctaInner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 45rem;
+            text-align: center;
+            h3 {
+                font-size: 2.4rem;
+                margin-bottom: 3rem;
+            }
+            button {
+                background: #25A55B;
+                color: white;
+                font-size: 1.6rem;
+                font-weight: bold;
+                padding: 1rem 2rem;
+                border-radius: 3px;
+                opacity: 1;
+                border: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}

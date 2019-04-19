@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Container should render correctly in 'debug' mode  1`] = `
+<div
+  className="App"
+>
+  <Nav />
+  <Router
+    loadingComponent="div"
+    outerComponent="div"
+    routeDidChange={[Function]}
+    routeWillChange={[Function]}
+    routerDidInitialize={[Function]}
+    routes={
+      Array [
+        Object {
+          "path": "/",
+          "render": [Function],
+        },
+        Object {
+          "path": "*",
+          "render": [Function],
+        },
+      ]
+    }
+    url=""
+  />
+</div>
+`;
